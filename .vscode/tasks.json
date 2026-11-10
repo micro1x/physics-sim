@@ -10,6 +10,8 @@
                 "/EHsc",
                 "/nologo",
                 "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${workspaceFolder}\\main.cpp",
+                "${workspaceFolder}\\helper.cpp",
                 "${file}",
                 "/link",
                 "/SUBSYSTEM:CONSOLE",
