@@ -6,17 +6,19 @@
             "command": "cl.exe",
             "args": [
                 "/I${workspaceFolder}\\SDL3-3.4.20\\include",
+                "/I${workspaceFolder}\\SDL3_ttf-3.2.2\\include",
                 "/Zi",
                 "/EHsc",
                 "/nologo",
                 "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "${workspaceFolder}\\main.cpp",
                 "${workspaceFolder}\\helper.cpp",
-                "${file}",
                 "/link",
                 "/SUBSYSTEM:CONSOLE",
                 "/LIBPATH:${workspaceFolder}\\SDL3-3.4.20\\lib\\x64",
-                "SDL3.lib"
+                "/LIBPATH:${workspaceFolder}\\SDL3_ttf-3.2.2\\lib\\x64",
+                "SDL3.lib",
+                "SDL3_ttf.lib"
             ],
             "options": {
                 "cwd": "${fileDirname}"

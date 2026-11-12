@@ -1,6 +1,7 @@
 #pragma once
 
-#include <SDL3/SDL_main.h>
+#include <iostream>
+#include <SDL3/SDL.h>
 #include <SDL3/SDL_render.h>
 
 struct WindowResources
@@ -12,3 +13,4 @@ struct WindowResources
 WindowResources create_window();
 void create_Menu(SDL_Renderer* renderer);
 void getMousePos(float x, float y);
+void createText();

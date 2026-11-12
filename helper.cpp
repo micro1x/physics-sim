@@ -36,10 +36,16 @@ WindowResources create_window()
 void create_Menu(SDL_Renderer* renderer)
 {
     SDL_FRect rect1;
-    SDL_FRect visualizerWindow;            // Window where visuals will show
+    SDL_FRect visualizerWindow;     // Window where visuals will show
+    SDL_FRect gravityButton;           
+    SDL_FRect planetRotation;
 
     rect1 = {0,0,1280,720};
     visualizerWindow = {13,12,830,480};
+    gravityButton = {860, 12, 180, 130};
+    planetRotation = {1070, 12, 180, 130};
+
+
    
     SDL_RenderClear(renderer);
     SDL_SetRenderDrawColor(renderer, 89,90,88, SDL_ALPHA_OPAQUE);
@@ -48,4 +54,13 @@ void create_Menu(SDL_Renderer* renderer)
     SDL_SetRenderDrawColor(renderer, 0,0,0, SDL_ALPHA_OPAQUE);
     SDL_RenderRect(renderer, &visualizerWindow);
     SDL_RenderFillRect(renderer,&visualizerWindow);
+    SDL_RenderRect(renderer, &gravityButton);
+    SDL_RenderFillRect(renderer, &gravityButton);
+    SDL_RenderRect(renderer, &planetRotation);
+    SDL_RenderFillRect(renderer, &planetRotation);
+}
+
+void createText()
+{
+    std::cout << "";
 }

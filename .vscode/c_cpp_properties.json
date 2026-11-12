@@ -16,7 +16,8 @@
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-msvc-x64",
             "compilerArgs": [
-                "/I${workspaceFolder}\\SDL3-3.4.20\\include"
+                "/I${workspaceFolder}\\SDL3-3.4.20\\include",
+                "/I${workspaceFolder}\\SDL3_ttf-3.2.2\\include"
             ]
         }
     ],

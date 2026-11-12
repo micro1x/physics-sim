@@ -3,6 +3,7 @@
 #include <SDL3/SDL_main.h>
 #include <SDL3/SDL_render.h>
 #include "helper.h"
+#include <SDL3_ttf/SDL_ttf.h>
 
 float x;
 float y;
@@ -16,9 +17,6 @@ int main(int argc, char* argv[]) {
     create_Menu(resources.renderer);
 
     SDL_RenderPresent(resources.renderer);
-    
-
-    // Check that the window was successfully created
 
 
     while (!done) {
